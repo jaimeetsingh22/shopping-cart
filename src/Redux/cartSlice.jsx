@@ -51,7 +51,7 @@ const cartSlice = createSlice({
                 sum = i.price > 0 ?  sum + i.price  * i.quantity : 0;
                 state.subTotal = sum;
                 state.shipping = state.subTotal > 1000 ? 0 : 200;
-                state.tax = (state.subTotal * 0.18).toFixed();
+                state.tax = +(state.subTotal * 0.18).toFixed();
                 state.total = state.subTotal + state.tax + state.shipping;
             })
         },
