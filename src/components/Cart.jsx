@@ -94,7 +94,7 @@ const Cart = () => {
           />
         )) : <Heading textAlign={'center'}>No Items there </Heading>}
       </Box>
-      <Box flex={{ base: 1, md: 0.8 }} ml={{ base: 0, md: 4 }} h={'80vh'} w={'100%'} borderRadius={'80px 0 0 80px'} boxShadow={'-10px 0 10px rgba(0,0,0,0.182)'}>
+      <Box flex={{ base: 1, md: 0.8 }} ml={{ base: 0, md: 4 }} h={'80vh'} w={'100%'} borderRadius={{base:0, md:'80px 0 0 80px'}} boxShadow={{base:'0', md:'-10px 0 10px rgba(0,0,0,0.182)'}}>
         <VStack p={'4'} justifyContent={'center'} alignItems={'flex-start'} spacing={3} marginLeft={'5'} h={'100%'} >
           <Heading mb={1}>Total</Heading>
           <Text>Subtotal: ₹{subTotal}</Text>
